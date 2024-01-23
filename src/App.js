@@ -25,19 +25,19 @@ function App() {
       </label>
       <button onClick={handleSearch}>Pesquisar</button>
       {countryData && (
-        <div>
+        <div className='country'>
           <h2>{countryData.name.common}</h2>
           <img src={countryData.flags.png} alt={`Bandeira do ${countryData.flags.alt}`}/>
-          <p>Capital: {countryData.capital}</p>
-          <p>Idioma: {Object.values(countryData.languages).join(', ')}</p>
-          <p>Moeda: {Object.values(countryData.currencies).map(currency => `${currency.name} (${currency.symbol})`).join(', ')}</p>
-          <p>Area: {countryData.area} km²</p>
+          <p><span>Capital:</span> {countryData.capital}</p>
+          <p><span>Idioma:</span> {Object.values(countryData.languages).join(', ')}</p>
+          <p><span>Moeda:</span> {Object.values(countryData.currencies).map(currency => `${currency.name} (${currency.symbol})`).join(', ')}</p>
+          <p><span>Area:</span> {countryData.area} km²</p>
+          <p><span>Sigla:</span> {countryData.altSpellings[0]}</p>
+          <p><span>Região:</span> {countryData.region}</p>
+          <p><span>Fronteiras:</span> {countryData.borders ? countryData.borders.join(', ') : 'Nenhum'}</p>
           <button>
             <a href={countryData.maps.googleMaps} target='_blank'>Google maps</a>
           </button>
-          <p>Sigla: {countryData.flag}</p>
-          <p>Região: {countryData.region}</p>
-          <p>Fronteiras: {countryData.borders ? countryData.borders.join(', ') : 'Nenhum'}</p>
         </div>
       )}
     </div>
