@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/CountriesInfos/static/css/main.73a92198.css",
-    "main.js": "/CountriesInfos/static/js/main.44fb5b19.js",
+    "main.js": "/CountriesInfos/static/js/main.fc90c3c5.js",
     "static/js/787.640766c3.chunk.js": "/CountriesInfos/static/js/787.640766c3.chunk.js",
     "static/media/fundo-do-planeta-terra.jpg": "/CountriesInfos/static/media/fundo-do-planeta-terra.7f3ee8fc0e0e4b22e626.jpg",
     "index.html": "/CountriesInfos/index.html",
     "main.73a92198.css.map": "/CountriesInfos/static/css/main.73a92198.css.map",
-    "main.44fb5b19.js.map": "/CountriesInfos/static/js/main.44fb5b19.js.map",
+    "main.fc90c3c5.js.map": "/CountriesInfos/static/js/main.fc90c3c5.js.map",
     "787.640766c3.chunk.js.map": "/CountriesInfos/static/js/787.640766c3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.73a92198.css",
-    "static/js/main.44fb5b19.js"
+    "static/js/main.fc90c3c5.js"
   ]
 }
