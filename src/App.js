@@ -27,7 +27,9 @@ function App() {
       {countryData && (
         <div className='country'>
           <h2>{countryData.name.common}</h2>
-          <img src={countryData.flags.png} alt={`Bandeira do ${countryData.flags.alt}`}/>
+          <div className="flag">
+            <img src={countryData.flags.png} alt={`Bandeira do ${countryData.flags.alt}`}/>
+          </div>
           <p><span>Capital:</span> {countryData.capital}</p>
           <p><span>Idioma:</span> {Object.values(countryData.languages).join(', ')}</p>
           <p><span>Moeda:</span> {Object.values(countryData.currencies).map(currency => `${currency.name} (${currency.symbol})`).join(', ')}</p>
